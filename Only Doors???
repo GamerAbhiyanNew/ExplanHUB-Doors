@@ -1,0 +1,254 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
+Frame.BackgroundTransparency = 0.500
+Frame.Position = UDim2.new(0.006, 0,0.900, 0)
+Frame.Size = UDim2.new(0, 100,0, 30)
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Size = UDim2.new(1, 0, 1, 0)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Explan Toggle"
+TextButton.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 50.000
+TextButton.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextStrokeTransparency = 0.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:Connect(function()
+	game:GetService("VirtualInputManager"):SendKeyEvent(true, "Q" , false , game)
+end)
+
+UITextSizeConstraint.Parent = TextButton
+UITextSizeConstraint.MaxTextSize = 40
+
+local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+getgenv().Theme = "BloodTheme"
+--[[
+    LightTheme
+    DarkTheme
+    GrapeTheme
+    BloodTheme
+    Ocean
+    Midnight
+    Sentinel
+    Synapse
+]]
+local starterGui = game:GetService("StarterGui")
+
+wait(1)
+starterGui:SetCore("SendNotification",{
+Title = "Message GamerAbhiyan",
+Text = "Thanks You For Executing My Script"
+})
+local Window = Library.CreateLib("Explan HUB | DOORS | 【V1】", getgenv().Theme)
+local Tab = Window:NewTab("Recommended")
+local Section = Tab:NewSection("If You Die You Will Lose The Toggle")
+local Section = Tab:NewSection("And You Executed Again And Too")
+local Section = Tab:NewSection("This Script Was Previously Closed First Yaa")
+Section:NewLabel("Or")
+local Section = Tab:NewSection("If You Die And Lose Toggle")
+local Section = Tab:NewSection("And Make Sure This Script Still Appears")
+local Section = Tab:NewSection("Press This Button To Bring Up Toggle Back")
+Section:NewButton("Bring up the Toggles", "Use This If You Lose The Toggle", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Explan/main/Toggle"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Succeed To Bring Up Toggle"
+})
+end)
+local Section = Tab:NewSection("I Still Recommend To Always Press This After Executing This Script")
+local Section = Tab:NewSection("Press This Button To Bring Up Toggle Back")
+Section:NewButton("Rejoin Button On Disconnected", "Recommended Auto Executed", function()
+	starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed And Just Press Once"
+})
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua"))()
+end)
+local Tab = Window:NewTab("Doors | Gui")
+local Section = Tab:NewSection("GUI Maybe?")
+Section:NewLabel("Darkrai-X")
+Section:NewButton("Click", " ", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Darkrai-X/main/Games/Doors"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed Darkrai-X SCRIPT"
+})
+end)
+Section:NewLabel("Vynixius")
+Section:NewButton("Click", " ", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed Vynixius SCRIPT"
+})
+end)
+Section:NewLabel("Nerd Doors")
+Section:NewButton("Click", " ", function()
+	starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed Nerd Doors SCRIPT"
+})
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "But If You Want To Be Able To Use It, You Have To Join Discord Nerd Doors"
+})
+end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/doorsnerdv4.lua"))()
+Section:NewLabel("MSDOORS")
+Section:NewButton("Click", " ", function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/MSDOORS/main/MSDOORS.lua"),true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed MSDOORS SCRIPT"
+})
+end)
+Section:NewLabel("Or")
+Section:NewLabel("MSDOORS")
+Section:NewButton("Click", " ", function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/mstudio45/poopdoors_edited/main/poopdoors_edited.lua"),true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed MSDOORS SCRIPT"
+})
+end)
+Section:NewLabel("PoopDoors")
+Section:NewButton("Click", " ", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed PoopDoors SCRIPT"
+})
+end)
+local Tab = Window:NewTab("Doors | Item")
+local Section = Tab:NewSection("Item")
+Section:NewLabel("Magnets")
+Section:NewButton("Click", " ", function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed Magnets SCRIPT"
+})
+end)
+Section:NewLabel("LaserGun")
+Section:NewButton("Click", " ", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/K0t1n/Public/main/Laser%20Gun"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed LaserGun SCRIPT"
+})
+end)
+Section:NewLabel("Banana Gun")
+Section:NewButton("Click", " ", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/MrNeRD0/Doors-Hack/main/BananaGunByNerd.lua"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed Banana Gun SCRIPT"
+})
+end)
+Section:NewLabel("Use Crucifix On Everything")
+Section:NewButton("Click", " ", function()
+	_G.Uses = 5000
+_G.Range = 30
+_G.OnAnything = true
+_G.Fail = false
+loadstring(game:HttpGet('https://raw.githubusercontent.com/PenguinManiack/Crucifix/main/Crucifix.lua'))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed Use Crucifix On Everything SCRIPT"
+})
+end)
+local Tab = Window:NewTab("Toggle")
+local Section = Tab:NewSection("ToggleUI")
+Section:NewButton("Keyboard", "For Hide UI", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewKeybind("Toggle ui", "makes the gui invisible, press again to make it visible", Enum.KeyCode.Q, function()
+	Library:ToggleUI()
+end)
+local Tab = Window:NewTab("My Script")
+local Section = Tab:NewSection("= My Script =")
+Section:NewButton("Natural Disaster Survival", " ", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/FktJaRpR"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Fly 【Mobile】", "IDK", function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/ySypYydL"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Noclip", "OP", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script-Op/main/SCRIPT%20Noclip"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Esp Player 【Name】", "Idk", function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/zachisfunny/ROBLOX-ESP/main/Script'),true))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Esp Player 【Cham】", "?", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script-ESP-CHAM/main/SCRIPT%20%3D%20Esp%20Player%20%E3%80%90Cham%E3%80%91"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Esp Player 【Cham 2】", "Ke 2 ", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/SCRIPT-credit/main/SCRIPT%20%3D%20Esp%20Player%20%E3%80%90Cham%202%E3%80%91"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Explan GUI | MOVEABLE | AUTO UPDATE", "", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/Script/main/SCRIPT%20%3D%20WalkSpeed%20GUI%20%7C%20MOVEABLE"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Explan GUI TEST | MOVEABLE", "", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/SCRIPT-test/main/SCRIPT%20%3D%20WalkSpeed%20TEST"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end)
+Section:NewButton("Credit", "What?, Wanna A Key?", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/GamerAbhiyanYT/SCRIPT-The-Real-CREDIT/main/SCRIPT%20%3D%20Credit"))()
+starterGui:SetCore("SendNotification",{
+Title = "Message",
+Text = "Successfully Executed"
+})
+end+
